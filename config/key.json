@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "stackmaze-database",
+  "private_key_id": "17bd2c75d871dda349b445856c757f0a897c3a14",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCYmP07UHeJ8jiV\nzzjz1moXjgosZn6dt4WucjQWyeIPQeoMm/1Wa8v45pQ1V7fzBOYQ6uKOtLuBJ4jV\n2xXrsbvbiaXzuY3x/Dpp86wC8Ph+wCbcbMZ86S2b0HEiKmKfrEOudBrE7RuswPJe\n9MeU7WZzcPQ4TZgTFvyUqT9MUmaJK2VJax0c08y8KGzF1n06/XMiNiyQU+QuIm0b\nbImR0JpssVGpMjOn7i4r7TkPF5IfY0elVKASF2p1UI4OuapbmWcG/kV5oPsueOgX\n/UlJukS4mfxVp9EnePDbP2CjdKGSvAgiRvqVKzRB9/vs+6PWwAJC5l/yP/+S6DKG\nQ8Za0onDAgMBAAECggEAMZQ7aoMZY6NkSSA7w9WdQKvwmD5w0vNmpqgKToEnRofG\n8HPaGrMJYYQhETe/12B3E3YNSApmhW7/4WO+OobTn1+YoJhgCwhFPlliQM5kHmJ1\n/dYFo13raJ2PtGcLBg/lKZAlhmf3PuitlrZ3BecgC0/euVBUoZctV2up2jVHhTco\nywVKnVLxZbh9f4GvAY0kSUhAu9m+6/Upg4Ewdcf8PJujN1TjdMJmAba1czxepHQX\nOQH+vzyOVwmERF8a2rcFgcLexn6+iCVlk4NKwXzGwYxXSdNSg/F1TusI/yFCupjo\n7zYOrTQrJwukB9oOBmBvEpO+zgXKEC7g7FJ5lyO/MQKBgQDJi5SJLti40zk5Y+If\nHEV/JsgdAAHo1VaivkPA37vcIEJh3rnzhu/XnQw1S3WHuC15WmH+z8i7Cbh9QZiw\nuyZz1qkEDq0+eTXkKHUagvcCANiE+Rim+ggtv3I1DVWR9aYpkoufmF02FFGgdpnW\n03WvRL/yNU9/2BTzhTe33HSUWQKBgQDB09CSJJG86t8TWqeSgyFxRBOpZLItrXWI\no7+Sz2MYY8hysduiCMHnFP72G2asgfzuILWU2UkA6k2kKkztcBhYD+c3kRgOt2cW\nP1QSrpQg6wHo+W++yYs+xRbh9Qy6X8kumGZ9AjqQ3XXw2dhVnCRNi9094NsxkgI6\nyzFHsLz7ewKBgFVS6zo8g/GTMpmySIuFK4LOB1AHrcdFch0J0aM41M43NgM7CJwp\nlyY/zWhOnt4rQc0rT2tRyhgs4Fbey2aehIPr77fRAtT8+ayy2Ai2Qx4s/30j+6TN\nG2NKtm3xTDWzunnFGakiFuwLJBd7vlstQJhH0b8XhKWJ9Cy4TENhaFVZAoGAUDC7\n99qdWRWrGSzGa31JFr1djRWWCgPbvp5QogKfMvYFdj5TaeRJpLsxCM0pW3GkHTj3\nJxAGfhRx7tt5XDqmN7jMplanJ1+FjNTCicAklMHl1mdsbfigXWXZI77odyst5tMy\ng8GqTUjyhKT8Nd8VveeBrxoaVZXcykpKpyhd54UCgYB2/vSWh18NLU6MWXb1iyzP\n9pdaDRoRrubfxgKPPI6zBH8R1osmXWWgVKvyCYXpAj/xphCvm59av9fLaGUaxR9W\n8i+PffitYJtiocfT6m8i/NGX8QJNT677ZKR9hINtE68ERTm7yoBu+5EmoIHGYlYu\nD4VJj3RD6moP5EhItpLLmQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-5x0ij@stackmaze-database.iam.gserviceaccount.com",
+  "client_id": "109607076039242253232",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-5x0ij%40stackmaze-database.iam.gserviceaccount.com"
+}

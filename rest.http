@@ -1,0 +1,26 @@
+POST http://localhost:3000/expenses
+Content-Type: application/json
+
+{
+    "date":"shaw2",
+    "title":"shaw2",
+    "note":"shaw2"
+}
+
+###
+GET http://localhost:3000/expenses
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/expenses/976ey2KjUqKYc6WD0PFI
+Content-Type: application/json
+
+{
+    "date":"updated",
+    "title":"updated",
+    "note":"updated"
+}   
+
+###
+DELETE http://localhost:3000/expenses/A0ireRqSiGeCSi0UN0PG
+
