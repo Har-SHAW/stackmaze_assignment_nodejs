@@ -4,7 +4,8 @@ Content-Type: application/json
 {
     "date":"shaw2",
     "title":"shaw2",
-    "note":"shaw2"
+    "note":"shaw2",
+    "amount":"200"
 }
 
 ###
