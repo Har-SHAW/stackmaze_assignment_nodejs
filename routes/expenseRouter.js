@@ -38,8 +38,8 @@ router.post("/", (req, res) => {
       .then(() => {
         res.json({ status: true });
       })
-      .catch((err) => {
-        console.log(err);
+      .catch(() => {
+        res.statusCode(500);
         res.json({ status: false });
       });
   }
@@ -56,6 +56,7 @@ router.put("/:id", (req, res) => {
         res.json({ status: true });
       })
       .catch(() => {
+        res.statusCode(500);
         res.json({ status: false });
       });
   }
@@ -70,6 +71,7 @@ router.delete("/:id", (req, res) => {
       res.json({ status: true });
     })
     .catch(() => {
+      res.statusCode(500);
       res.json({ status: false });
     });
 });
