@@ -20,14 +20,13 @@ router.get("/", (req, res) => {
       res.json(lst);
     })
     .catch(() => {
-      res.statusCode(500);
+      res.status(500);
       res.json({ status: false });
     });
 });
 
 router.post("/", (req, res) => {
   if (req.body) {
-    const sig = req.headers["react-signature"];
     const secret = process.env.SECURITY_KEY;
 
     const crypto = require("crypto");
@@ -35,9 +34,10 @@ router.post("/", (req, res) => {
     const shasum = crypto.createHmac("sha256", secret);
     shasum.update(JSON.stringify(req.body));
     const digest = shasum.digest("hex");
-
-    console.log(digest);
-    if (digest === sig) {
+    if (
+      req.headers["react-signature"] &&
+      digest === req.headers["react-signature"]
+    ) {
       const data = new Expense(req.body);
       firebase
         .collection("database")
@@ -61,21 +61,23 @@ router.post("/", (req, res) => {
               res.json(lst);
             })
             .catch(() => {
-              res.statusCode(500);
+              res.status(500);
               res.json({ status: false });
             });
         })
         .catch(() => {
-          res.statusCode(500);
+          res.status(500);
           res.json({ status: false });
         });
+    } else {
+      res.status(500);
+      res.json({ status: false, msg: "intigrity checksum not satisfied" });
     }
   }
 });
 
 router.put("/:id", (req, res) => {
   if (req.body) {
-    const sig = req.headers["react-signature"];
     const secret = process.env.SECURITY_KEY;
 
     const crypto = require("crypto");
@@ -83,9 +85,10 @@ router.put("/:id", (req, res) => {
     const shasum = crypto.createHmac("sha256", secret);
     shasum.update(JSON.stringify(req.body));
     const digest = shasum.digest("hex");
-
-    console.log(digest);
-    if (digest === sig) {
+    if (
+      req.headers["react-signature"] &&
+      digest === req.headers["react-signature"]
+    ) {
       const data = new Expense(req.body);
       firebase
         .collection("database")
@@ -110,14 +113,17 @@ router.put("/:id", (req, res) => {
               res.json(lst);
             })
             .catch(() => {
-              res.statusCode(500);
+              res.status(500);
               res.json({ status: false });
             });
         })
         .catch(() => {
-          res.statusCode(500);
+          res.status(500);
           res.json({ status: false });
         });
+    } else {
+      res.status(500);
+      res.json({ status: false, msg: "intigrity checksum not satisfied" });
     }
   }
 });
@@ -141,12 +147,12 @@ router.delete("/:id", (req, res) => {
           res.json(lst);
         })
         .catch(() => {
-          res.statusCode(500);
+          res.status(500);
           res.json({ status: false });
         });
     })
     .catch(() => {
-      res.statusCode(500);
+      res.status(500);
       res.json({ status: false });
     });
 });
